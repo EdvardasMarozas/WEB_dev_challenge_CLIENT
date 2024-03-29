@@ -1,4 +1,4 @@
-function Header() {
+function Header(props) {
   return (
     <>
       <h1 className="text-center mb-3">
@@ -6,6 +6,7 @@ function Header() {
           KITM DI logo generator
         </a>
       </h1>
+      {(props.nav) &&
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -41,7 +42,7 @@ function Header() {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav>}
     </>
   );
 }
